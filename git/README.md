@@ -30,7 +30,7 @@ git add
 ```
 
 > After `git add` you can add ``directory-name`` or `files-name` \
-> You `.` to stage all changes in current directory
+> Use `.` to stage all changes in current directory
 
 Commit staged files and specify a commit message
 
