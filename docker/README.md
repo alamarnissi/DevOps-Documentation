@@ -16,8 +16,11 @@ docker image pull [image-name]:[image-version]/[image-tag]
 Build new docker image
 
 ```sh
-docker build -t [image-label] .
+docker build -t [image-label] .   # the dot . means the currect folder, you can chage it by the path/to/dockerfile
 ```
+
+> **OPTIONS:** \
+> `-f, --file` Specify a docker file name (default is 'Dockerfile')
 
 Run container
 
