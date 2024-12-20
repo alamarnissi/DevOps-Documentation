@@ -12,6 +12,18 @@ Clone an existing repository into a specified directory
 git clone [repo-url]
 ```
 
+List all config parameter
+
+```sh
+git config --list
+```
+
+Get single config parameter
+
+```sh
+git config --get remote.origin.url		# "remote.origin.url" can be "user.email" ..
+```
+
 Set user information for your commits 
 
 ```sh
@@ -20,6 +32,12 @@ git config --global user.name "[name]"
 git config --global user.email "[email]"
 ```
 > Tag `--global` is used for configuring user information for all local repositories
+
+Unset credential (if you need to change github account credential)
+
+```sh
+git config --global --unset user.email  # here we are unsetting user.email
+```
 
 # Git Daily Work
 
@@ -60,6 +78,18 @@ Push your commits into a specified branch
 
 ```sh
 git push [remote] [branch] 
+```
+
+Remove commit that has not been pushed 
+
+```sh
+git reset HEAD~1
+```
+
+Remove file from tracked filed to ignore it
+
+```sh
+git rm --cached file_name
 ```
 
 # Git Branches
